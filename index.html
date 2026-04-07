@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soluciones Olvera | Desarrollo Web y Soluciones Digitales</title>
+  <meta name="description" content="Creamos sitios web profesionales, administración digital y soluciones visuales para negocios que quieren proyectarse mejor." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50:'#f0fdfa',
+              100:'#ccfbf1',
+              500:'#14b8a6',
+              600:'#0f766e',
+              700:'#0d5f59',
+              800:'#16213b',
+              900:'#08111f'
+            }
+          },
+          boxShadow: {
+            soft:'0 18px 45px rgba(15, 23, 42, 0.08)',
+            strong:'0 24px 60px rgba(5, 12, 25, 0.28)'
+          },
+          borderRadius: {
+            '4xl':'2rem'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="antialiased">
+  <header class="topbar-blur sticky top-0 z-50">
+    <div class="mx-auto flex min-h-[82px] w-[min(1220px,92%)] items-center justify-between gap-5">
+      <a href="index.html#inicio" class="flex min-w-0 items-center gap-3">
+        <img src="logo-blanco.png" alt="Soluciones Olvera" class="h-11 w-auto object-contain md:h-12" />
+        <div class="min-w-0">
+          <div class="truncate text-base font-extrabold text-white md:text-lg">Soluciones Olvera</div>
+          <div class="truncate text-[11px] font-medium tracking-[0.16em] text-white/65 md:text-xs">DESARROLLO WEB & PRESENCIA DIGITAL</div>
+        </div>
+      </a>
+
+      <nav class="mobile-hidden flex items-center gap-6 text-sm font-semibold text-white/85">
+        <a class="nav-link" href="#paquetes">Paquetes</a>
+        <a class="nav-link" href="#beneficios">Beneficios</a>
+        <a class="nav-link" href="#complementos">Complementos</a>
+        <a class="nav-link" href="#servicios-ti">Servicios TI</a>
+        <a class="nav-link" href="#contacto">Contacto</a>
+      </nav>
+
+      <a href="#contacto" class="rounded-full border border-white/15 bg-white/10 px-5 py-3 text-sm font-extrabold text-white transition hover:bg-white/15">
+        Solicitar información
+      </a>
+    </div>
+  </header>
+
+  <section id="inicio" class="bg-mesh-grid overflow-hidden text-white">
+    <div class="mx-auto grid w-[min(1220px,92%)] items-center gap-10 py-16 md:py-20 lg:grid-cols-[1.02fr_.98fr] lg:py-24">
+      <div>
+        <span class="section-badge light mb-5">Desarrollo web • administración • Google Maps • diseño • apoyo digital</span>
+        <h1 class="section-title max-w-4xl text-4xl font-black md:text-5xl xl:text-7xl">Haz que tu negocio se vea más profesional y genere más confianza desde el primer vistazo</h1>
+        <p class="mt-5 max-w-2xl text-base text-white/80 md:text-lg">
+          Diseñamos sitios web claros, modernos y funcionales. También reforzamos tu presencia digital con soluciones complementarias para que tu marca se vea mejor, comunique con más claridad y proyecte mayor valor.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#contacto" class="btn-brand inline-flex rounded-full px-6 py-4 text-sm font-extrabold md:text-base">Solicitar información</a>
+          <a href="#paquetes" class="btn-outline-dark inline-flex rounded-full px-6 py-4 text-sm font-extrabold md:text-base">Ver soluciones</a>
+        </div>
+
+        <ul class="list-check mt-8 grid gap-3 text-sm text-white/90 sm:grid-cols-2 md:text-[15px]">
+          <li>Propuestas personalizadas según tu negocio</li>
+          <li>Diseño profesional adaptable a celular</li>
+          <li>Soluciones complementarias para crecer mejor</li>
+          <li>Atención cercana con enfoque comercial</li>
+        </ul>
+      </div>
+
+      <div class="relative">
+        <div class="overflow-hidden rounded-[2rem] border border-white/10 bg-white shadow-strong">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80" alt="Equipo trabajando en desarrollo web y estrategia digital" class="h-[320px] w-full object-cover sm:h-[420px] lg:h-[560px]" />
+        </div>
+
+        <div class="glass-card absolute -bottom-6 left-0 max-w-sm rounded-[1.6rem] p-6 text-white md:left-[-18px]">
+          <h3 class="text-xl font-extrabold">Una propuesta más sólida</h3>
+          <p class="mt-2 text-sm text-white/78">Diseño, estructura y comunicación para que el servicio se vea mejor y conecte con más facilidad.</p>
+          <ul class="list-check mt-4 grid gap-2 text-sm text-white/88">
+            <li>Más claridad en lo que incluye</li>
+            <li>Más confianza para pedir información</li>
+            <li>Más coherencia visual en toda la marca</li>
+          </ul>
+        </div>
+
+        <div class="glass-card absolute -top-4 right-0 rounded-3xl px-5 py-4 text-white md:right-[-8px]">
+          <strong class="block text-base font-extrabold">Soluciones más completas</strong>
+          <span class="block text-sm text-white/72">No solo hacemos páginas web, reforzamos la imagen digital del negocio.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="mx-auto -mt-8 grid w-[min(1220px,92%)] gap-4 md:grid-cols-2 xl:grid-cols-4">
+    <div class="surface-card rounded-[1.4rem] p-6">
+      <strong class="block text-base font-extrabold">Imagen más profesional</strong>
+      <span class="mt-1 block text-sm text-slate-600">Presenta tu negocio con una apariencia seria, moderna y confiable.</span>
+    </div>
+    <div class="surface-card rounded-[1.4rem] p-6">
+      <strong class="block text-base font-extrabold">Atención personalizada</strong>
+      <span class="mt-1 block text-sm text-slate-600">Nos adaptamos al giro, tamaño y objetivos de cada cliente.</span>
+    </div>
+    <div class="surface-card rounded-[1.4rem] p-6">
+      <strong class="block text-base font-extrabold">Servicios escalables</strong>
+      <span class="mt-1 block text-sm text-slate-600">Puedes comenzar con lo esencial y crecer con más apoyo digital.</span>
+    </div>
+    <div class="surface-card rounded-[1.4rem] p-6">
+      <strong class="block text-base font-extrabold">Enfoque comercial</strong>
+      <span class="mt-1 block text-sm text-slate-600">Todo está pensado para comunicar mejor y generar contacto.</span>
+    </div>
+  </div>
+
+  <section id="paquetes" class="py-20">
+    <div class="mx-auto w-[min(1220px,92%)]">
+      <div class="mx-auto mb-12 max-w-3xl text-center">
+        <span class="section-badge brand mb-4">Paquetes principales</span>
+        <h2 class="section-title text-3xl font-black text-slate-900 md:text-5xl">Impulsa tu negocio con la solución ideal</h2>
+        <p class="mt-4 text-base text-slate-600 md:text-lg">
+          Cada proyecto se cotiza de forma personalizada para adaptar el alcance, el soporte y las soluciones a lo que realmente necesita cada negocio.
+        </p>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <article class="surface-card rounded-[1.7rem] p-7">
+          <span class="mb-4 inline-flex rounded-full bg-teal-50 px-3 py-2 text-xs font-extrabold text-teal-700">Paquete 01</span>
+          <h3 class="text-2xl font-black text-slate-900">Desarrollo Web Profesional</h3>
+          <p class="mt-3 text-slate-600">Una base sólida para negocios que necesitan una página web clara, funcional y bien presentada.</p>
+          <ul class="list-check mt-5 grid gap-3 text-sm text-slate-700">
+            <li>Diseño y desarrollo del sitio web</li>
+            <li>Versión adaptable a celular y computadora</li>
+            <li>Secciones principales con contenido inicial</li>
+            <li>Formulario de contacto integrado</li>
+            <li>Estructura clara para servicios o productos</li>
+          </ul>
+          <a href="#contacto" class="btn-brand mt-6 inline-flex rounded-full px-5 py-3 text-sm font-extrabold">Solicitar información</a>
+        </article>
+
+        <article class="surface-card rounded-[1.7rem] p-7">
+          <span class="mb-4 inline-flex rounded-full bg-sky-50 px-3 py-2 text-xs font-extrabold text-sky-700">Paquete 02</span>
+          <h3 class="text-2xl font-black text-slate-900">Sitio Web + Administración</h3>
+          <p class="mt-3 text-slate-600">Pensado para empresas que quieren mantener su sitio actualizado, estable y bien atendido.</p>
+          <ul class="list-check mt-5 grid gap-3 text-sm text-slate-700">
+            <li>Hospedaje administrado</li>
+            <li>Soporte y ajustes continuos</li>
+            <li>Respaldos periódicos</li>
+            <li>Monitoreo de estabilidad y rendimiento</li>
+            <li>Seguimiento posterior al lanzamiento</li>
+          </ul>
+          <a href="#contacto" class="btn-brand mt-6 inline-flex rounded-full px-5 py-3 text-sm font-extrabold">Recibir propuesta</a>
+        </article>
+
+        <article class="surface-card rounded-[1.7rem] p-7">
+          <span class="mb-4 inline-flex rounded-full bg-indigo-50 px-3 py-2 text-xs font-extrabold text-indigo-700">Paquete 03</span>
+          <h3 class="text-2xl font-black text-slate-900">Google Maps y presencia local</h3>
+          <p class="mt-3 text-slate-600">Ideal para negocios que quieren ser encontrados con más facilidad y proyectar mayor confianza.</p>
+          <ul class="list-check mt-5 grid gap-3 text-sm text-slate-700">
+            <li>Alta o configuración del perfil</li>
+            <li>Optimización de datos del negocio</li>
+            <li>Horarios, descripción y categorías</li>
+            <li>Apoyo visual para una mejor presentación</li>
+            <li>Mayor claridad en búsquedas locales</li>
+          </ul>
+          <a href="#contacto" class="btn-brand mt-6 inline-flex rounded-full px-5 py-3 text-sm font-extrabold">Quiero más detalles</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="beneficios" class="py-20">
+    <div class="mx-auto w-[min(1220px,92%)]">
+      <div class="mx-auto mb-12 max-w-3xl text-center">
+        <span class="section-badge brand mb-4">Beneficios</span>
+        <h2 class="section-title text-3xl font-black text-slate-900 md:text-5xl">Más que una página web: una presencia digital mejor pensada</h2>
+        <p class="mt-4 text-base text-slate-600 md:text-lg">La idea no es solo tener una página, sino una herramienta que ayude a proyectar mejor el negocio y facilitar el contacto.</p>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="surface-card rounded-[1.6rem] p-7">
+          <div class="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-50 to-blue-100 text-2xl">🎯</div>
+          <h3 class="text-xl font-extrabold">Mayor claridad comercial</h3>
+          <p class="mt-2 text-slate-600">La información se ordena mejor para que el negocio comunique de forma más clara lo que ofrece.</p>
+        </div>
+        <div class="surface-card rounded-[1.6rem] p-7">
+          <div class="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-50 to-blue-100 text-2xl">🤝</div>
+          <h3 class="text-xl font-extrabold">Más confianza para el cliente</h3>
+          <p class="mt-2 text-slate-600">Una imagen profesional y una estructura bien cuidada ayudan a que la marca se perciba más seria.</p>
+        </div>
+        <div class="surface-card rounded-[1.6rem] p-7">
+          <div class="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-50 to-blue-100 text-2xl">📈</div>
+          <h3 class="text-xl font-extrabold">Escalabilidad</h3>
+          <p class="mt-2 text-slate-600">Se puede comenzar con una base sólida y después sumar servicios complementarios según el crecimiento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="complementos" class="py-20">
+    <div class="mx-auto grid w-[min(1220px,92%)] gap-6 lg:grid-cols-[.96fr_1.04fr]">
+      <div class="surface-card rounded-[1.8rem] p-8">
+        <span class="section-badge brand mb-4">Complementos</span>
+        <h2 class="section-title text-3xl font-black text-slate-900 md:text-4xl">Servicios extra que elevan el valor de la propuesta</h2>
+        <p class="mt-4 text-slate-600">Estos servicios pueden venderse como complementos o integrarse a una solución más completa.</p>
+        <ul class="list-check mt-6 grid gap-3 text-sm text-slate-700 md:text-[15px]">
+          <li>Administración mensual del sitio web</li>
+          <li>Actualización de textos, imágenes o secciones</li>
+          <li>Diseño gráfico para publicaciones</li>
+          <li>Apoyo operativo para redes sociales</li>
+          <li>Gestión y seguimiento con project manager</li>
+          <li>Optimización general de presencia digital</li>
+        </ul>
+        <a href="#contacto" class="btn-brand mt-7 inline-flex rounded-full px-6 py-3 text-sm font-extrabold">Solicitar propuesta personalizada</a>
+      </div>
+
+      <div class="grid gap-5 md:grid-cols-2">
+        <div class="surface-card rounded-[1.5rem] p-6">
+          <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-50 to-blue-100 text-xl">📍</div>
+          <h3 class="text-lg font-extrabold">Perfil de empresa en Google</h3>
+          <p class="mt-2 text-sm text-slate-600">Ayuda a que el negocio aparezca mejor ubicado y con una presentación más clara.</p>
+        </div>
+        <div class="surface-card rounded-[1.5rem] p-6">
+          <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-50 to-blue-100 text-xl">🛠️</div>
+          <h3 class="text-lg font-extrabold">Administración del sitio</h3>
+          <p class="mt-2 text-sm text-slate-600">Ideal para mantener el sitio actualizado, estable y bien cuidado después del lanzamiento.</p>
+        </div>
+        <div class="surface-card rounded-[1.5rem] p-6">
+          <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-50 to-blue-100 text-xl">📣</div>
+          <h3 class="text-lg font-extrabold">Apoyo en redes sociales</h3>
+          <p class="mt-2 text-sm text-slate-600">Refuerza la comunicación de la marca con una línea visual más cuidada y constante.</p>
+        </div>
+        <div class="surface-card rounded-[1.5rem] p-6">
+          <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-50 to-blue-100 text-xl">🎨</div>
+          <h3 class="text-lg font-extrabold">Diseño gráfico</h3>
+          <p class="mt-2 text-sm text-slate-600">Piezas visuales más limpias, atractivas y coherentes para publicaciones y materiales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios-ti" class="py-20">
+    <div class="mx-auto w-[min(1220px,92%)]">
+      <div class="surface-card overflow-hidden rounded-[2rem] lg:grid lg:grid-cols-[1.05fr_.95fr]">
+        <div class="p-8 md:p-10">
+          <span class="section-badge brand mb-4">Nueva vista</span>
+          <h2 class="section-title text-3xl font-black text-slate-900 md:text-5xl">También ofrecemos servicios TI generales en Querétaro</h2>
+          <p class="mt-4 max-w-2xl text-base text-slate-600 md:text-lg">
+            Si buscas apoyo más amplio en tecnología, soporte, infraestructura, mantenimiento o acompañamiento operativo, ya dejamos una vista adicional para presentar ese servicio con el mismo estilo profesional del sitio.
+          </p>
+          <ul class="list-check mt-6 grid gap-3 text-sm text-slate-700 md:grid-cols-2 md:text-[15px]">
+            <li>Soporte técnico general para negocios</li>
+            <li>Mantenimiento preventivo y correctivo</li>
+            <li>Redes, equipos, impresoras y conectividad</li>
+            <li>Apoyo operativo en TI para empresas en Querétaro</li>
+          </ul>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="servicios-ti-queretaro.html" class="btn-brand inline-flex rounded-full px-6 py-4 text-sm font-extrabold">Ver página de Servicios TI</a>
+            <a href="#contacto" class="inline-flex rounded-full border border-slate-200 px-6 py-4 text-sm font-extrabold text-slate-900 transition hover:bg-slate-50">Solicitar información</a>
+          </div>
+        </div>
+        <div class="h-full min-h-[280px]">
+          <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=1200&q=80" alt="Servicios TI para empresas en Querétaro" class="h-full w-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="mx-auto w-[min(980px,92%)]">
+      <div class="mx-auto mb-12 max-w-3xl text-center">
+        <span class="section-badge brand mb-4">Preguntas frecuentes</span>
+        <h2 class="section-title text-3xl font-black text-slate-900 md:text-5xl">Aclara tus dudas antes de comenzar</h2>
+        <p class="mt-4 text-base text-slate-600 md:text-lg">Aquí encontrarás respuestas claras para conocer mejor nuestros servicios y tomar una decisión con más seguridad.</p>
+      </div>
+
+      <div class="grid gap-4">
+        <details class="faq-item surface-card rounded-[1.4rem] p-6">
+          <summary class="flex items-center justify-between gap-4 text-lg font-extrabold text-slate-900">
+            ¿Publican precios en la página?
+            <span class="faq-plus text-2xl text-teal-700 transition">+</span>
+          </summary>
+          <p class="mt-4 text-slate-600">No. Cada proyecto se revisa de manera personalizada para ofrecer una propuesta adecuada según el alcance y la necesidad del negocio.</p>
+        </details>
+        <details class="faq-item surface-card rounded-[1.4rem] p-6">
+          <summary class="flex items-center justify-between gap-4 text-lg font-extrabold text-slate-900">
+            ¿Se adaptan a distintos presupuestos?
+            <span class="faq-plus text-2xl text-teal-700 transition">+</span>
+          </summary>
+          <p class="mt-4 text-slate-600">Sí. Buscamos adaptar la propuesta según la necesidad del cliente para ofrecer una solución funcional, clara y competitiva.</p>
+        </details>
+        <details class="faq-item surface-card rounded-[1.4rem] p-6">
+          <summary class="flex items-center justify-between gap-4 text-lg font-extrabold text-slate-900">
+            ¿Solo desarrollan páginas web?
+            <span class="faq-plus text-2xl text-teal-700 transition">+</span>
+          </summary>
+          <p class="mt-4 text-slate-600">No. También podemos complementar con administración del sitio, presencia local, diseño gráfico, apoyo digital y servicios TI.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="py-20">
+    <div class="mx-auto w-[min(1220px,92%)]">
+      <div class="bg-mesh-grid overflow-hidden rounded-[2rem] p-6 shadow-strong md:p-10">
+        <div class="grid items-start gap-8 lg:grid-cols-[.95fr_1.05fr]">
+          <div class="text-white">
+            <span class="section-badge light mb-4">Contacto</span>
+            <h2 class="section-title max-w-2xl text-3xl font-black md:text-5xl">Cuéntanos sobre tu proyecto y te ayudamos a encontrar una solución clara y bien pensada</h2>
+            <p class="mt-4 max-w-2xl text-base text-white/80 md:text-lg">
+              Completa el formulario y te contactaremos para conocer mejor lo que necesitas. Queremos que este proceso se sienta fácil, claro y profesional desde el primer paso.
+            </p>
+
+            <div class="mt-6 flex flex-wrap gap-3">
+              <span class="rounded-full border border-white/12 bg-white/10 px-4 py-2 text-sm font-bold text-white/92">Atención personalizada</span>
+              <span class="rounded-full border border-white/12 bg-white/10 px-4 py-2 text-sm font-bold text-white/92">Propuesta a la medida</span>
+              <span class="rounded-full border border-white/12 bg-white/10 px-4 py-2 text-sm font-bold text-white/92">Respuesta rápida</span>
+              <span class="rounded-full border border-white/12 bg-white/10 px-4 py-2 text-sm font-bold text-white/92">Enfoque profesional</span>
+            </div>
+
+            <div class="mt-8 rounded-[1.6rem] border border-white/12 bg-white/8 p-5">
+              <div class="text-sm font-bold uppercase tracking-[0.16em] text-white/55">Ubicación</div>
+              <div class="mt-2 text-lg font-extrabold text-white">Querétaro, Qro.</div>
+              <p class="mt-2 text-sm text-white/72">Atendemos proyectos con una comunicación clara y una propuesta adaptada a lo que realmente necesita cada negocio.</p>
+            </div>
+          </div>
+
+          <div class="form-shell rounded-[1.8rem] p-6 md:p-8">
+            <h3 class="text-2xl font-black text-white md:text-3xl">Solicita información</h3>
+            <p class="mt-2 text-sm text-white/70 md:text-base">Déjanos tus datos y te contactamos lo antes posible.</p>
+
+            <form class="mt-6 grid gap-5" action="https://formsubmit.co/vicolvolv@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="Nuevo contacto desde Soluciones Olvera" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+
+              <div class="grid gap-4 md:grid-cols-2">
+                <div>
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input id="nombre" name="nombre" type="text" class="form-control" placeholder="Tu nombre" required />
+                </div>
+                <div>
+                  <label for="telefono" class="form-label">Teléfono</label>
+                  <input id="telefono" name="telefono" type="tel" class="form-control" placeholder="Tu número" required />
+                </div>
+              </div>
+
+              <div class="grid gap-4 md:grid-cols-2">
+                <div>
+                  <label for="empresa" class="form-label">Empresa o negocio</label>
+                  <input id="empresa" name="empresa" type="text" class="form-control" placeholder="Nombre de tu negocio" />
+                </div>
+                <div>
+                  <label for="servicio" class="form-label">Servicio de interés</label>
+                  <div class="select-wrap">
+                    <select id="servicio" name="servicio" class="form-control" required>
+                      <option value="">Selecciona una opción</option>
+                      <option value="Desarrollo Web">Desarrollo Web</option>
+                      <option value="Administración Web">Administración Web</option>
+                      <option value="Google Maps">Google Maps</option>
+                      <option value="Diseño Gráfico">Diseño Gráfico</option>
+                      <option value="Redes Sociales">Redes Sociales</option>
+                      <option value="Solución Integral">Solución Integral</option>
+                      <option value="Servicios TI">Servicios TI</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <label for="mensaje" class="form-label">Cuéntanos qué necesitas</label>
+                <textarea id="mensaje" name="mensaje" class="form-control" placeholder="Escribe aquí un poco sobre tu proyecto o lo que estás buscando..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-brand mt-1 inline-flex w-full items-center justify-center rounded-full px-6 py-4 text-sm font-extrabold md:text-base">
+                Enviar solicitud
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#08101d] py-8 text-white/75">
+    <div class="mx-auto flex w-[min(1220px,92%)] flex-col items-start justify-between gap-3 text-sm md:flex-row">
+      <p>© 2026 Soluciones Olvera. Desarrollo web, administración y acompañamiento para negocios.</p>
+      <p>Presencia digital profesional • Atención personalizada • Soluciones a la medida</p>
+    </div>
+  </footer>
+</body>
+</html>
